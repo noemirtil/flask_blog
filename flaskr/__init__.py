@@ -28,9 +28,9 @@ def create_app(test_config=None):
         pass
 
     # a test page
-    # @app.route('/hello')
-    # def hello():
-    #     return 'Hello, World!'
+    @app.route('/hello')
+    def hello():
+        return 'Hello, World!'
 
     # import db.py and call its init_app()
     from . import db
